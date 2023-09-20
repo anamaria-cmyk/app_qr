@@ -1,10 +1,15 @@
-import 'package:app_qr/widgets/custom_navigatorbar.dart';
-import 'package:app_qr/pages/direcciones_page.dart';
-import 'package:app_qr/pages/mapas_pages.dart';
-import 'package:app_qr/providers/ui_provider.dart';
-import 'package:app_qr/widgets/scan_button.dart';
+// ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'package:app_qr/pages/direcciones_page.dart';
+import 'package:app_qr/pages/mapas_pages.dart';
+
+import 'package:app_qr/widgets/scan_button.dart';
+import 'package:app_qr/widgets/custom_navigatorbar.dart';
+
+import 'package:app_qr/providers/db_provider.dart';
+import 'package:app_qr/providers/ui_provider.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -45,6 +50,10 @@ class _HomePageBody  extends StatelessWidget {
 
    //cambiar para mostrar la paguina respectiva
    final  opcionSeleccionada = uiProvider.selectedMenuOpt;
+
+   //TODO: temporal leer la basee de datos 
+   
+   DBProvider.db.database;
    
    switch( opcionSeleccionada ) {
 

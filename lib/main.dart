@@ -1,3 +1,4 @@
+// ignore_for_file: use_key_in_widget_constructors
 import 'package:app_qr/pages/home_pages.dart';
 import 'package:app_qr/pages/mapas_pages.dart';
 import 'package:app_qr/providers/ui_provider.dart';
